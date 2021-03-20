@@ -12,6 +12,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Stitzel Law</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville:300,400,500,700&display=swap" />
 </head>
 <body>
     <div id="app"></div>

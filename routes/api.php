@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware(['throttle:100'])->group(function() {
+    Route::get('testimonials', 'TestimonialController@index');
+    Route::post('testimonials', 'TestimonialController@store');
+});
