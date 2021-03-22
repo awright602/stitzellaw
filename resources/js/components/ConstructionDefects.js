@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const ConstructionDefects = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="Construction Defects" />
         <br />
         <PracticeAreaSection title="Florida Construction Defects Attorney" content="With the present growth in population in Florida necessarily comes an onslaught of new residential 
@@ -39,7 +39,7 @@ and regulations or inadequate inspections, Stitzel Law, LLC is available to help
             to hold the at fault party responsible for damages to your home or business resulting from their construction defect, let Stitzel Law, LLC aid and assist you in handling your
             claim for construction defects in the greater Tampa area."
         />
-    </Paper>
+    </>
 );
 
 export default ConstructionDefects;

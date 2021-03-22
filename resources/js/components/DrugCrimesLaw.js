@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const DrugCrimesLaw = () => (
-    <Paper style={ { padding: '5px' } } square>
+    <>
         <PracticeAreaHeader title="Drug Crimes Law"/>
         <br />
         <PracticeAreaSection title="Drug Crime Law in Brandon, FL" content ="Many drug-related crimes carry extremely heavy jail sentences and fines. If you are ever convicted of a 
@@ -19,8 +19,8 @@ const DrugCrimesLaw = () => (
         <PracticeAreaFooter title="Here to Help" content="If you’ve been charged with a drug-related crime, contact Stitzel Law, LLC to discuss your case with an understanding 
         defense attorney. Depending on the circumstances of your situation, Stitzel Law, LLC may be able to help you obtain a favorable plea deal, help you prove your innocence, or even get the charges against you dropped completely. 
         The key is to act quickly, so call today."
-/> 
-    </Paper>
+        /> 
+    </>
 );
 
 export default DrugCrimesLaw;

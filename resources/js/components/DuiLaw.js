@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const DuiLaw = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="DUI Law" />
         <br />
         <PracticeAreaSection title="DUI Law in Brandon, FL" content="Driving under the influence (DUI, also sometimes called DWI or OUI) is one of the most commonly committed 
@@ -32,7 +32,7 @@ With the stakes being so high, it’s a wise idea to enlist the help of an attor
             Whether this is your only DUI charge or your third, Stitzel Law, LLC can provide the support, advice, and representation you need to fight your DUI charge.
             Call today—your future depends on it.
 </Typography>
-    </Paper>
+    </>
 );
 
 export default DuiLaw;

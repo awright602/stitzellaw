@@ -14,8 +14,20 @@ const useStyles = makeStyles(theme => ({
     title: {
         flexGrow: 1,
     },
+    contactContainer: {
+        display: 'flex',
+        backgroundColor: '#696969',
+        width: '100vw',
+        height: '4em',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    addressContainer: {
+        marginLeft: '5em',
+        color: 'white',
+        display: 'inline-flex',
+    },
     address: {
-        float: 'left',
         color: 'white',
         textDecoration: 'none',
         fontFamily: 'Montserrat',
@@ -24,9 +36,11 @@ const useStyles = makeStyles(theme => ({
         float: 'left',
         color: '#a68f65',
     },
-    addressContainer: {
-        marginLeft: '5em',
+        phoneContainer: {
+        marginRight: '5em',
         color: 'white',
+        display: 'inline-flex',
+        float: 'right',
     },
     phone: {
         float: 'right',
@@ -36,17 +50,7 @@ const useStyles = makeStyles(theme => ({
         float: 'right',
         color: '#a68f65',
     },
-    phoneContainer: {
-        marginTop: '-15px',
-        marginRight: '5em',
-        color: 'white',
-    },
-    contactContainer: {
-        backgroundColor: '#696969',
-        width: '100%',
-        height: '40px',
-        paddingTop: '10px',
-    },
+
 }));
 
 export default function Header() {
@@ -60,14 +64,13 @@ export default function Header() {
                         &nbsp;
                         <DirectionsCarIcon className={classes.carIcon} />
                         <a href='https://www.google.com/maps/place/206+Mason+St,+Brandon,+FL+33511/@27.9352329,-82.286113,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2cdc91415f0af:0x30838b1d3cb2d066!8m2!3d27.9352282!4d-82.2839243'
-                            target='_blank' >
+                            target='_blank' style={ {textDecoration: 'none'} }>
                             <Typography className={classes.address} >206 Mason St, Brandon, FL 33511</Typography>
                         </a>
                     </div>
                     <div className={classes.phoneContainer}>
-                        <Typography><a href="tel:+1-813-643-8000" className={classes.phone}>+1.813.643.8000</a></Typography>
                         <PhoneIcon className={classes.phoneIcon} />
-
+                        <Typography><a href="tel:+1-813-643-8000" className={classes.phone} style={ {textDecoration: 'none'} }>+1.813.643.8000</a></Typography>
                     </div>
                 </div>
                 <NavBar />

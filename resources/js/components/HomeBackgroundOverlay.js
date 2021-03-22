@@ -1,28 +1,21 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import HomeBackground from '../../images/HomeBackground.jpg';
 import { CardMedia, CardActionArea } from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginTop: '22.5em',
         position: 'absolute',
-        top: '13px',
-        right: '50px',
-        left: '1000px',
-        bottom: '17.2em',
         backgroundColor: 'black',
         opacity: '70%',
         color: 'white',
+        display: 'inline-flex',
+        alignSelf: 'center',
         borderImage: 'linear-gradient(to right, #0083c5 0%, #0083c5 33%, #ec4a26 66%, #ec4a26 100%)',
         borderImageSlice: '1',
-
         [theme.breakpoints.down('md')]: {
             marginTop: 'unset',
             top: 'unset',
@@ -30,7 +23,7 @@ const useStyles = makeStyles(theme => ({
             right: 'unset',
             position: 'inherit',
         },
-
+        marginRight: '0.75em',
     },
     bullet: {
         display: 'inline-block',
@@ -40,7 +33,6 @@ const useStyles = makeStyles(theme => ({
     title: {
         fontSize: '20px',
         color: 'white',
-
     },
     fixPadding: {
         padding: '10px',

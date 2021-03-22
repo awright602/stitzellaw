@@ -7,7 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core';
+import { ThemeProvider, createMuiTheme, Paper } from '@material-ui/core';
 import ChildCustody from './ChildCustody';
 import ChildSupport from './ChildSupport';
 import CriminalLaw from './CriminalLaw';
@@ -56,9 +56,9 @@ function App() {
     return (
         <BrowserRouter>
             <Scroll showBelow={250} />
-            <div >
-                <ThemeProvider theme={theme}>
-                    <Header />
+            <ThemeProvider theme={theme}>
+                <Header />
+                <Paper style={{ padding: '5px', overflow: 'hidden', marginTop: '11em' }} square>
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about" component={About} />
@@ -75,9 +75,9 @@ function App() {
                         <Route exact path="/violentCrimesLaw" component={ViolentCrimesLaw} ></Route>
                         <Route exact path="/constructionDefects" component={ConstructionDefects} ></Route>
                     </Switch>
-                    <Footer />
-                </ThemeProvider>
-            </div>
+                </Paper>
+                <Footer />
+            </ThemeProvider>
         </BrowserRouter>
     );
 

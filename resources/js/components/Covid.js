@@ -12,11 +12,11 @@ import { CardMedia, CardActionArea } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginTop: '5em',
+        marginTop: '11.3em',
         position: 'absolute',
-        top: '30px',
-        left: '400px',
-        right: '400px',
+        marginTop: '0.25em',
+        left: '15em',
+        right: '15em',
         backgroundColor: 'maroon',
         opacity: '80%',
         color: 'white',
@@ -31,23 +31,18 @@ const useStyles = makeStyles(theme => ({
             position: 'inherit',
         },
     },
-
     bullet: {
         display: 'inline-block',
         margin: '0 2px',
         transform: 'scale(0.8)',
     },
-
     title: {
         fontSize: '20px',
         color: 'white',
         textAlign: 'center',
         fontFamily: 'Libre Baskerville',
         paddingTop: '25px',
-
-
     },
-
     pos: {
         marginBottom: 2,
         color: 'white',

@@ -8,7 +8,6 @@ const useStyles = makeStyles(theme => ({
     titleMargin: {
         marginLeft: '2.5em',
         marginRight: '5em',
-
     },
 }));
 
@@ -17,11 +16,11 @@ const PracticeAreaHeader = (props) => {
     const classes = useStyles();
 
     return (
-        <>
+        <div>
             <HeaderBanner type="practiceArea" />
             <h1 className={classes.titleMargin}>{props.title}</h1>
             <Divider variant="middle" />
-        </>
+        </div>
     );
 };
 

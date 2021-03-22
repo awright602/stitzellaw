@@ -51,8 +51,7 @@ const About = () => {
     const classes = useStyles();
 
     return (
-
-        <Paper style={{ padding: '5px' }} square>
+        <>
             <HeaderBanner type="About" />
             <h1 className={classes.headerWithDivider}>Meet Howard Stitzel</h1>
             <Divider light />
@@ -71,7 +70,7 @@ const About = () => {
                     </Typography>
                 </Grid>
             </Grid>
-        </Paper >
+        </>
 
     );
 };

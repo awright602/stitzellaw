@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const FamilyLaw = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="FamilyLaw" />
         <br />
         <PracticeAreaSection title="Family Law in Brandon, FL">
@@ -38,7 +38,7 @@ const FamilyLaw = () => (
 
 Contact me when you need legal advice and representation in matters of family law. I represent clients in Brandon, FL."
         />
-    </Paper>
+    </>
 );
 
 export default FamilyLaw;

@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const ViolentCrimesLaw = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="Violent Crimes Law" />
         <br />
         <PracticeAreaSection title="Violent Crime Law in Brandon, FL" content="Assault and battery charges require aggressive and competent legal representation. 
@@ -31,7 +31,7 @@ const ViolentCrimesLaw = () => (
             </ul>
             <Typography>Contact me today to consult with a knowledgeable attorney. I represent clients in Brandon, FL.</Typography>
         </PracticeAreaFooter>
-    </Paper>
+    </>
 );
 
 export default ViolentCrimesLaw;

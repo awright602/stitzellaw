@@ -26,11 +26,11 @@ const useStyles = makeStyles(theme => ({
 function Testimonials() {
     const [testimonials, setTestimonials] = React.useState([]);
 
-    if (!testimonials.length) {
+    React.useEffect(() => {
         fetch('api/testimonials')
             .then(response => response.json())
             .then(data => setTestimonials(data.data));
-    }
+    }, [])
 
     const classes = useStyles();
 

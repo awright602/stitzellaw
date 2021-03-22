@@ -18,7 +18,7 @@ const ChildCustody = () => {
     const classes = useStyles();
 
     return (
-        <Paper style={{ padding: '5px' }} square>
+        <>
             <PracticeAreaHeader title="Child Custody Law" />
             <br />
             <PracticeAreaSection title="The Name to Trust for Help with Child Custody Agreements" content="Your search for the right lawyer to handle child custody agreements in Brandon, FL, is over when you turn to Stitzel Law, LLC. The outcome of your child custody dispute is going to affect the lives of you and your family for years to come, which is why I am fully devoted to your individual case. For years, my firm has been negotiating on the behalf of clients to come to an amicable agreement regarding custody, visitation, and more. Call today and find out why so many of my clients in the area have depended on me to fight for their parental rights." />
@@ -36,7 +36,7 @@ const ChildCustody = () => {
                 <Typography className={classes.legalese}>Having to dispute custody with a spouse during a divorce is an extremely trying time for any parent. Even if the split is amicable, debates regarding children can often be heated. Allow me to mediate the process so that both parties can come to an agreement that works in the best interest of the child. Contact my firm to set up a consultation today.
             Contact me right away for assistance from a knowledgeable custody lawyer. I am proud to represent Brandon, FL, and the surrounding area.</Typography>
             </PracticeAreaFooter>
-        </Paper>
+        </>
     );
 };
 

@@ -11,16 +11,18 @@ import { CardMedia, CardActionArea } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginTop: '25em',
         position: 'absolute',
-        top: '500px',
-        left: '400px',
-        right: '400px',
+        display: 'flex',
+        alignSelf: 'flex-end',
+        justifyContent: 'center',
+        left: '15em',
+        right: '15em',
         backgroundColor: 'black',
         opacity: '70%',
         color: 'white',
         borderImage: 'linear-gradient(to right, #0083c5 0%, #0083c5 33%, #ec4a26 66%, #ec4a26 100%)',
         borderImageSlice: '1',
+        marginBottom: '0.25em',
 
         [theme.breakpoints.down('md')]: {
             marginTop: 'unset',
@@ -52,7 +54,6 @@ const useStyles = makeStyles(theme => ({
 export default function HomeBottomBackgroundOverlay() {
     const classes = useStyles();
     return (
-
         <Card variant="outlined" className={classes.root} >
             <CardMedia>
                 <CardContent>

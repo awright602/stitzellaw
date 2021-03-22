@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const DivorceLaw = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="Divorce Law" />
         <br />
         <PracticeAreaSection title="Divorce Attorney in Brandon, FL" content="Divorce and related legal matters can be complex. Stitzel Law, LLC works 
@@ -26,7 +26,7 @@ const DivorceLaw = () => (
             <Typography>Call today to talk to a compassionate lawyer about your needs and concerns.</Typography>
         </PracticeAreaFooter>
 
-    </Paper>
+    </>
 );
 
 export default DivorceLaw;

@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
 const Contact = () => {
     const classes = useStyles();
     return (
-        <Paper style={{ textAlign: 'left', padding: '5px' }} square>
+        <>
             <HeaderBanner type="Contact Us" />
             <Grid container>
                 <Grid item xs={3}>
@@ -71,7 +71,7 @@ const Contact = () => {
                 </Grid>
             </Grid>
 
-        </Paper>
+        </>
     );
 };
 

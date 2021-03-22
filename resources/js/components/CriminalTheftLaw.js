@@ -8,7 +8,7 @@ import PracticeAreaSection from './PracticeAreaSection';
 import PracticeAreaFooter from './PracticeAreaFooter';
 
 const CriminalTheftLaw = () => (
-    <Paper style={{ padding: '5px' }} square>
+    <>
         <PracticeAreaHeader title="Criminal Theft Law" />
         <PracticeAreaSection
             title="Criminal Theft Law in Brandon, FL"
@@ -23,7 +23,7 @@ const CriminalTheftLaw = () => (
         I understand that theft is a broad and sometimes unwieldy area of law, but I have knowledge of various facets of criminal theft law, and I will strive to treat your defense 
         with the utmost personalized attention. I can help you avoid conviction, reduce sentencing, or reach a reasonable plea bargain. Call me today for a consultation."
         />
-    </Paper>
+    </>
 );
 
 export default CriminalTheftLaw;
