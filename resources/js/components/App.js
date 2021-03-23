@@ -20,8 +20,6 @@ import ViolentCrimesLaw from './ViolentCrimesLaw';
 import ConstructionDefects from './ConstructionDefects';
 import Scroll from './Scroll';
 
-
-
 function App() {
     const theme = createMuiTheme({
         palette: {
@@ -36,17 +34,6 @@ function App() {
         typography: {
             fontFamily: [
                 'Libre Baskerville',
-                //'Montserrat',
-                //'-apple-system',
-                //'BlinkMacSystemFont',
-                //'"Segoe UI"',
-                //'Roboto',
-                //'"Helvetica Neue"',
-                //'Arial',
-                //'sans-serif',
-                //'"Apple Color Emoji"',
-                //'"Segoe UI Emoji"',
-                //'"Segoe UI Symbol"',
             ].join(','),
         },
 

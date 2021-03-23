@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -65,6 +66,10 @@ const useStyles = makeStyles(theme => ({
 
 export default function Header() {
     const classes = useStyles();
+    let location = useLocation();
+    useEffect(() => {
+        window[`scrollTo`]({ top: 0, behavior: `smooth` });
+    }, [location])
 
     return (
         <div className={classes.root}>
