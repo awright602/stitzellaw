@@ -62,9 +62,13 @@ const NavBar = () => {
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
-    const handleClose = () => {
+    const handleCloseAnchor = () => {
         setAnchorEl(null);
         setCollapsed(screen.width < 1025);
+    }
+    const handleClose = () => {
+        handleCloseAnchor();
+        window[`scrollTo`]({ top: 0, behavior: `smooth` });
     };
 
     return (
@@ -90,7 +94,7 @@ const NavBar = () => {
                         anchorEl={anchorEl}
                         keepMounted
                         open={Boolean(anchorEl)}
-                        onClose={handleClose}
+                        onClose={handleCloseAnchor}
                     >
                         <MenuItem onClick={handleClose}>
                             <Link to="/childCustody" className={classes.link}>
