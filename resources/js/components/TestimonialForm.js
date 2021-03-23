@@ -106,8 +106,23 @@ const TestimonialForm = () => {
                         fullWidth
                     />
                     <br />
-                    <Button type="submit">Create</Button>
-                    <Button type="button" onClick={() => setIsFormOpen(false)} >Cancel</Button>
+                    <br />
+                    <Button
+                        type="submit"
+                        color="primary"
+                        variant='outlined'
+                        style={ {marginRight: '1em'} }
+                    >
+                        Create
+                    </Button>
+                    <Button
+                        type="button"
+                        onClick={() => setIsFormOpen(false)}
+                        color="primary"
+                        variant='outlined'
+                    >
+                        Cancel
+                    </Button>
                 </form>
             );
         }

@@ -6,11 +6,20 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'justify',
         marginLeft: '5em',
         marginRight: '5em',
+        [theme.breakpoints.down('sm')]: {
+            textAlign: 'left',
+            marginLeft: '0.5em',
+            marginRight: '0.5em',
+        },
     },
-
     titleMargin: {
         marginLeft: '3.4em',
         marginRight: '3em',
+        [theme.breakpoints.down('sm')]: {
+            textAlign: 'center',
+            marginLeft: '0.5em',
+            marginRight: '0.5em',
+        },
     },
 }));
 

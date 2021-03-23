@@ -4,7 +4,6 @@ import HeaderBanner from './HeaderBanner';
 import Howard from '../../images/howard.jpeg';
 
 const useStyles = makeStyles(theme => ({
-
     education: {
         listStyleType: 'none',
         textAlign: 'left',
@@ -16,7 +15,6 @@ const useStyles = makeStyles(theme => ({
     },
     h1Margin: {
         margin: 'unset',
-
     },
     howardBio: {
         textAlign: 'justify',
@@ -26,8 +24,6 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             marginTop: 'unset',
             paddingLeft: '3em',
-
-
         },
     },
     aboutUsConsultation: {
@@ -59,7 +55,7 @@ const About = () => {
                 <Grid item xs={2} className={classes.image}>
                     <img src={Howard} />
                 </Grid>
-                <Grid item xs={9}>
+                <Grid item xs={10} md={9}>
                     <Typography className={classes.howardBio}>
                         Howard Stitzel received his undergraduate degree in History and Political Science and his law degree from Stetson University.
                         Howard began practicing law in 1989 and concentrates his practice in the areas of family law, criminal defense, personal injury and civil trial practice.

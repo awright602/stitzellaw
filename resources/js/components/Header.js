@@ -21,11 +21,17 @@ const useStyles = makeStyles(theme => ({
         height: '4em',
         alignItems: 'center',
         justifyContent: 'space-between',
+        [theme.breakpoints.down('xs')]: {
+            flexWrap: 'wrap',
+        },
     },
     addressContainer: {
         marginLeft: '5em',
         color: 'white',
         display: 'inline-flex',
+        [theme.breakpoints.down('xs')]: {
+            marginLeft: '0.9em',
+        },
     },
     address: {
         color: 'white',
@@ -36,11 +42,15 @@ const useStyles = makeStyles(theme => ({
         float: 'left',
         color: '#a68f65',
     },
-        phoneContainer: {
+    phoneContainer: {
         marginRight: '5em',
         color: 'white',
         display: 'inline-flex',
         float: 'right',
+        [theme.breakpoints.down('xs')]: {
+            marginRight: 'unset',
+            marginLeft: '1em',
+        },
     },
     phone: {
         float: 'right',

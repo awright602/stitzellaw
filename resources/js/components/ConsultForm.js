@@ -13,7 +13,7 @@ const ConsultForm = ( { detailDescriptor = 'Case Details' } ) => {
 
     return (
       <Grid container spacing={5} style={{marginTop: '1em'}}>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
               <TextField
                   id="name"
                   name="name"
@@ -26,7 +26,7 @@ const ConsultForm = ( { detailDescriptor = 'Case Details' } ) => {
                   }}
               />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
               <TextField
                   id="email"
                   name="email"
@@ -41,7 +41,7 @@ const ConsultForm = ( { detailDescriptor = 'Case Details' } ) => {
                   }}
               />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
               <TextField
                   id="phone"
                   name="phone"

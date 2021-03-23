@@ -23,13 +23,8 @@ const useStyles = makeStyles(theme => ({
         borderImage: 'linear-gradient(to right, #0083c5 0%, #0083c5 33%, #ec4a26 66%, #ec4a26 100%)',
         borderImageSlice: '1',
         marginBottom: '0.25em',
-
         [theme.breakpoints.down('md')]: {
-            marginTop: 'unset',
-            top: 'unset',
-            left: 'unset',
-            right: 'unset',
-            position: 'inherit',
+            display: 'none',
         },
     },
     bullet: {

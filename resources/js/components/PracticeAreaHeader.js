@@ -8,6 +8,11 @@ const useStyles = makeStyles(theme => ({
     titleMargin: {
         marginLeft: '2.5em',
         marginRight: '5em',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: 'unset',
+            marginRight: 'unset',
+            textAlign: 'center',
+        },
     },
 }));
 

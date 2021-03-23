@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Typography,
     makeStyles,
     Grid,
-    TextField,
-    Button,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import PracticeAreaSection from './PracticeAreaSection';
@@ -22,6 +20,12 @@ const useStyles = makeStyles(theme => ({
     },
     homepageBackground: {
         width: '100vw',
+        [theme.breakpoints.down('md')]: {
+            height: '95vh',
+        },
+        [theme.breakpoints.down('xs')]: {
+            height: '60vh',
+        },
     },
     logo: {
         textAlign: 'center',
@@ -36,6 +40,15 @@ const useStyles = makeStyles(theme => ({
         paddingBottom: '0.25em',
         paddingLeft: '2em',
         paddingRight: '2em',
+        [theme.breakpoints.down('md')]: {
+            paddingRight: 'unset',
+            paddingLeft: 'unset',
+        },
+    },
+    practiceAreas: {
+        [theme.breakpoints.down('md')]: {
+            flexDirection: 'column-reverse',
+        },
     },
     link: {
         textDecoration: 'none',
@@ -55,11 +68,6 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
     const classes = useStyles();
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [details, setDetails] = useState('')
-
     return (
         <>
             <div className={classes.homeBannerContainer}>
@@ -82,9 +90,9 @@ const Home = () => {
                     <PracticeAreaSection content="Attempting to tackle a legal matter on your own can end up negatively impacting the outcome of your situation. Why risk such repercussions when a dedicated lawyer is on hand to offer guidance when you need it the most? To set up an appointment, call Stitzel Law, LLC today." />
                 </div>
                 <CenterPageHeader title="Practice Areas" />
-                <Grid container>
-                    <Grid item xs={6}>
-                        <Grid container style={{paddingLeft: '2em'}}>
+                <Grid container className={classes.practiceAreas}>
+                    <Grid item xs={12} md={6} style={{paddingLeft: '2em'}}>
+                        <Grid container>
                             <Grid item xs={12} style={{ marginBottom: '1em' }}>
                                 <Link to="childCustody" className={classes.link}>Child Custody Law</Link>
                             </Grid>
@@ -117,7 +125,7 @@ const Home = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} md={6}>
                         <img src={homeHandshake} alt="background" className={classes.handshake} />
                     </Grid>
                 </Grid>

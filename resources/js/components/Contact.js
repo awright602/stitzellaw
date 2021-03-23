@@ -21,8 +21,10 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
+        width: '100%',
         font: '20px',
         fontFamily: 'Libre Baskerville',
+        flexGrow: 1,
     },
     icon: {
         color: '#a68f65',
@@ -43,7 +45,7 @@ const Contact = () => {
         <>
             <HeaderBanner type="Contact Us" />
             <Grid container>
-                <Grid item xs={3}>
+                <Grid item sm={6} md={3} style={{flexGrow: 1}}>
                     <Paper className={classes.gridItem}>
                         <MyLocationIcon className={classes.icon} />
                         <a href='https://www.google.com/maps/place/206+Mason+St,+Brandon,+FL+33511/@27.9352329,-82.286113,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2cdc91415f0af:0x30838b1d3cb2d066!8m2!3d27.9352282!4d-82.2839243'
@@ -52,19 +54,19 @@ const Contact = () => {
                         </a>
                     </Paper>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item sm={6} md={3} style={{flexGrow: 1}}>
                     <Paper className={classes.gridItem}>
                         <PhoneIcon className={classes.icon} />
                         <a href="tel:+1-813-643-8000" className={classes.link}>+1.813.643.8000</a>
                     </Paper>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item sm={6} md={3} style={{flexGrow: 1}}>
                     <Paper className={classes.gridItem}>
                         <EmailIcon className={classes.icon} />
                         <a href="mailto:howardstitzel@yahoo.com" className={classes.link}>howardstitzel@yahoo.com</a>
                     </Paper>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item sm={6} md={3} style={{flexGrow: 1}}>
                     <Paper className={classes.gridItem}>
                         <QueryBuilderIcon className={classes.icon} />
                         <Typography> Monday - Friday</Typography>

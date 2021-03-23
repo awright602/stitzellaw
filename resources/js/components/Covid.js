@@ -2,12 +2,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import HomeBackground from '../../images/HomeBackground.jpg';
-import { CardMedia, CardActionArea } from '@material-ui/core';
+import { CardMedia } from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,13 +19,12 @@ const useStyles = makeStyles(theme => ({
         color: 'white',
         borderImage: 'linear-gradient(to right, #0083c5 0%, #0083c5 33%, #ec4a26 66%, #ec4a26 100%)',
         borderImageSlice: '1',
-
         [theme.breakpoints.down('md')]: {
-            marginTop: 'unset',
+            marginTop: '7em',
             top: 'unset',
             left: 'unset',
             right: 'unset',
-            position: 'inherit',
+            position: 'absolute',
         },
     },
     bullet: {
@@ -53,9 +49,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Covid() {
     const classes = useStyles();
-
     return (
-
         <Card variant="outlined" className={classes.root} >
             <CardMedia >
                 <CardContent>
@@ -68,7 +62,7 @@ export default function Covid() {
                 </Typography>
                     <Typography variant="body2" component="p" style={{ textAlign: 'justify' }}>
                         Our office is fully prepared to assist with your legal needs during the Covid-19 Cornoavirus pandemic. Zoom hearings are conducted daily within our sterilized office. Telephonic consultations are available upon request.
-                        We are able to socially distance during your consultations and offer use of a seperate computer area for our client's needs related to their case. Our office is ready to assit you, please feel free to call (813) 643-8000.
+                        We are able to socially distance during your consultations and offer use of a seperate computer area for our client's needs related to their case. Our office is ready to assit you, please feel free to call <a href="tel:+1-813-643-8000" className={classes.phone} style={ {textDecoration: 'none', color: 'inherit'} }>(813) 643-8000</a>.
                 </Typography>
                 </CardContent>
             </CardMedia>
