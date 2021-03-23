@@ -47,8 +47,7 @@ class ConsultController extends Controller
 
         $consult = Consult::create($request->only(array_keys($rules)));
 
-        // Mail::to(['howardstitzel@yahoo.com'])->send(new ConsultMail($consult));
-        Mail::to(['wwright2@gmail.com'])->send(new ConsultMail($consult));
+        Mail::to(['howardstitzel@yahoo.com'])->send(new ConsultMail($consult));
         return response()->json(['status' => 'SUCCESS', 'data' => $consult]);
     }
 
