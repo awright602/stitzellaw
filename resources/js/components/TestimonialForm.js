@@ -5,8 +5,8 @@ import { FormControl, InputLabel, Button, TextField, Select, MenuItem } from '@m
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
-        margin: theme.spacing(1),
-        minWidth: '215px',
+        marginTop: '0.5em',
+        minWidth: '100%',
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
@@ -59,7 +59,7 @@ const TestimonialForm = () => {
         if (isFormOpen) {
             return (
                 <form
-                    style={{ textAlign: 'center', marginBottom: '1em' }}
+                    style={{ marginBottom: '1em' }}
                     name="testimonialForm"
                     onSubmit={handleSubmit}
                 >
@@ -68,6 +68,7 @@ const TestimonialForm = () => {
                         label="Name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
+                        fullWidth
                     />
                     <br />
                     <TextField
@@ -75,6 +76,7 @@ const TestimonialForm = () => {
                         label="Review Title"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
+                        fullWidth
                     />
                     <br />
                     <FormControl className={classes.formControl}>
@@ -84,6 +86,7 @@ const TestimonialForm = () => {
                             labelId="rating-select-label"
                             value={rating}
                             onChange={(e) => setRating(e.target.value)}
+                            fullWidth
                         >
                             <MenuItem value={1}>{getStars(1)}</MenuItem>
                             <MenuItem value={2}>{getStars(2)}</MenuItem>
@@ -98,6 +101,9 @@ const TestimonialForm = () => {
                         label="Review"
                         value={review}
                         onChange={(e) => setReview(e.target.value)}
+                        multiline
+                        rows='4'
+                        fullWidth
                     />
                     <br />
                     <Button type="submit">Create</Button>
@@ -110,8 +116,10 @@ const TestimonialForm = () => {
     }
 
     return (
-        <div style={{ textAlign: 'center' }}>
-            <Button color="secondary" type="button" onClick={() => setIsFormOpen(true)}>Create your own review</Button>
+        <div>
+            <div style={{ textAlign: 'center' }}>
+                <Button color="secondary" type="button" onClick={() => setIsFormOpen(true)}>Create your own review</Button>
+            </div>
             {getForm()}
         </div>
     );

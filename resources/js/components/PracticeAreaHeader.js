@@ -16,11 +16,11 @@ const PracticeAreaHeader = (props) => {
     const classes = useStyles();
 
     return (
-        <div>
+        <>
             <HeaderBanner type="practiceArea" />
             <h1 className={classes.titleMargin}>{props.title}</h1>
             <Divider variant="middle" />
-        </div>
+        </>
     );
 };
 

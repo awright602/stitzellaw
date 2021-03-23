@@ -26,7 +26,7 @@ function App() {
     const theme = createMuiTheme({
         palette: {
             primary: {
-                main: '#f8f8f8',
+                main: '#a68f65',
                 contrastText: '#000000',
             },
             secondary: {
@@ -58,7 +58,7 @@ function App() {
             <Scroll showBelow={250} />
             <ThemeProvider theme={theme}>
                 <Header />
-                <Paper style={{ padding: '5px', overflow: 'hidden', marginTop: '11em' }} square>
+                <Paper style={{ padding: '5px', overflow: 'hidden', marginTop: '6em' }} square>
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about" component={About} />

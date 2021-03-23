@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Typography,
     makeStyles,
-    Paper,
     Grid,
     TextField,
+    Button,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import PracticeAreaSection from './PracticeAreaSection';
@@ -13,6 +13,7 @@ import CenterPageHeader from './CenterPageHeader';
 import Covid from './Covid';
 import HomeBackgroundOverlay from './HomeBackgroundOverlay';
 import HomeBottomBackgroundOverlay from './HomeBottomBackgroundOverlay';
+import ConsultForm from './ConsultForm';
 
 const useStyles = makeStyles(theme => ({
     homeBannerContainer: {
@@ -33,13 +34,13 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#e8e8e8',
         paddingTop: '0.25em',
         paddingBottom: '0.25em',
+        paddingLeft: '2em',
+        paddingRight: '2em',
     },
-
     link: {
         textDecoration: 'none',
         color: '#a68f65',
         fontSize: '20px',
-
     },
     handshake: {
         width: '450px',
@@ -54,9 +55,13 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
     const classes = useStyles();
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [details, setDetails] = useState('')
 
     return (
-        < >
+        <>
             <div className={classes.homeBannerContainer}>
                 <img src='../../images/HomeBackground.jpg' className={classes.homepageBackground} />
                 <Covid />
@@ -79,7 +84,7 @@ const Home = () => {
                 <CenterPageHeader title="Practice Areas" />
                 <Grid container>
                     <Grid item xs={6}>
-                        <Grid container>
+                        <Grid container style={{paddingLeft: '2em'}}>
                             <Grid item xs={12} style={{ marginBottom: '1em' }}>
                                 <Link to="childCustody" className={classes.link}>Child Custody Law</Link>
                             </Grid>
@@ -120,42 +125,7 @@ const Home = () => {
             <div className={classes.greyBackground}>
                 <CenterPageHeader title="Don't Hesitate To Ask For A Consultation" />
                 <Typography className={classes.centerText}>Fill out the form below for a confidential initial consultation. Don’t worry, we never share your information or use it to spam you. </Typography>
-                <Grid container spacing={5}>
-                    <Grid item xs={4}>
-                        <TextField
-                            id="name"
-                            name="name"
-                            label="Name"
-                            fullWidth
-                        />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <TextField
-                            id="email"
-                            name="email"
-                            label="Email Address"
-                            fullWidth
-                        />
-                    </Grid>
-                    <Grid item xs={4}>
-                        <TextField
-                            id="phone"
-                            name="phone"
-                            label="Phone Number"
-                            fullWidth
-                        />
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField
-                            id="caseDetails"
-                            name="caseDetails"
-                            label="Case Details"
-                            multiline
-                            rows='4'
-                            fullWidth
-                        />
-                    </Grid>
-                </Grid>
+                <ConsultForm />
             </div>
         </>
     );

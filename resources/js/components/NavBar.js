@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     },
     toolbar: {
         //  margin: 'auto',
-        marginLeft: '3em',
+        paddingLeft: '4.5em',
+        backgroundColor: '#f8f8f8'
     }
 }));
 

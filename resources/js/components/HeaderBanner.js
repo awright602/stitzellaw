@@ -10,37 +10,58 @@ const useStyles = makeStyles(theme => ({
     headerText: {
         color: 'white',
         fontSize: '3.5rem',
-        marginLeft: '2.75em',
-        marginTop: '1em',
     },
     praticeAreaBanner: {
-        display: 'flex',
-        // marginTop: '10em',
+        marginTop: '4em',
         height: '11em',
         background: 'center top no-repeat',
         backgroundImage: `url(${praticeAreaBanner})`,
         backgroundSize: 'auto',
+        display: 'inline-flex',
+        flexDirection: 'column',
+        flexGrow: 1,
+        flexShrink: 0,
+        width: '100vw',
+        alignItems: 'center',
     },
     aboutBanner: {
-        // marginTop: '10em',
+        marginTop: '4em',
         height: '11em',
         background: 'center top no-repeat',
         backgroundImage: `url(${aboutBanner})`,
         backgroundSize: 'auto',
+        display: 'inline-flex',
+        flexDirection: 'column',
+        flexGrow: 1,
+        flexShrink: 0,
+        width: '100vw',
+        alignItems: 'center',
     },
     testimonialsBanner: {
-        // marginTop: '10em',
+        marginTop: '4em',
         height: '11em',
         background: 'center top no-repeat',
         backgroundImage: `url(${testimonialsBanner})`,
         backgroundSize: 'auto',
+        display: 'inline-flex',
+        flexDirection: 'column',
+        flexGrow: 1,
+        flexShrink: 0,
+        width: '100vw',
+        alignItems: 'center',
     },
     contactBanner: {
-        // marginTop: '10em',
+        marginTop: '4em',
         height: '11em',
         background: 'center top no-repeat',
         backgroundImage: `url(${contactBanner})`,
         backgroundSize: 'auto',
+        display: 'inline-flex',
+        flexDirection: 'column',
+        flexGrow: 1,
+        flexShrink: 0,
+        width: '100vw',
+        alignItems: 'center',
     },
 }));
 
@@ -50,34 +71,26 @@ const HeaderBanner = (props) => {
     if (props.type === 'practiceArea') {
         return (
             <div className={classes.praticeAreaBanner}>
-                <div>
-                    <Typography className={classes.headerText}>Stitzel Law</Typography>
-                </div>
+                <Typography className={classes.headerText}>Stitzel Law</Typography>
             </div>
 
         );
     } else if (props.type === 'About') {
         return (
             <div className={classes.aboutBanner}>
-                <div>
-                    <Typography className={classes.headerText}>About Us</Typography>
-                </div>
+                <Typography className={classes.headerText}>About Us</Typography>
             </div>
         );
     } else if (props.type === 'Testimonials') {
         return (
             <div className={classes.testimonialsBanner}>
-                <div>
-                    <Typography className={classes.headerText}>Testimonials</Typography>
-                </div>
+                <Typography className={classes.headerText}>Testimonials</Typography>
             </div>
         );
     } else if (props.type === 'Contact Us') {
         return (
             <div className={classes.contactBanner}>
-                <div>
-                    <Typography className={classes.headerText}>Contact Us</Typography>
-                </div>
+                <Typography className={classes.headerText}>Contact Us</Typography>
             </div>
         );
     }

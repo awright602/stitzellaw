@@ -21,3 +21,7 @@ Route::middleware(['throttle:100'])->group(function() {
     Route::get('testimonials', 'TestimonialController@index');
     Route::post('testimonials', 'TestimonialController@store');
 });
+
+Route::middleware(['throttle:100'])->group(function() {
+    Route::post('consults', 'ConsultController@store');
+});

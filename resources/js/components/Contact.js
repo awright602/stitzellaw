@@ -2,12 +2,14 @@ import React from 'react';
 import {
     Paper, Grid, Typography, makeStyles
 } from '@material-ui/core';
-import ContactPhoneIcon from '@material-ui/icons/ContactPhoneRounded';
 import MyLocationIcon from '@material-ui/icons/MyLocation';
 import HeaderBanner from './HeaderBanner';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
+import CenterPageHeader from './CenterPageHeader';
+import ConsultForm from './ConsultForm';
+
 
 const useStyles = makeStyles(theme => ({
     link: {
@@ -70,7 +72,10 @@ const Contact = () => {
                     </Paper>
                 </Grid>
             </Grid>
-
+            <Paper style={{padding: '1em', marginTop: '1em'}} square>
+                <CenterPageHeader title="Contact Us" />
+                <ConsultForm detailDescriptor='Message' />
+            </Paper>
         </>
     );
 };
