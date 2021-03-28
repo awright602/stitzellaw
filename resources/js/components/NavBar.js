@@ -22,12 +22,10 @@ const useStyles = makeStyles(theme => ({
         paddingLeft: '4.5em',
         backgroundColor: '#f8f8f8',
         [theme.breakpoints.down('md')]: {
-            flexDirection: 'column',
-            alignItems: 'baseline',
+            flexDirection: 'row',
         },
         [theme.breakpoints.down('xs')]: {
             paddingLeft: 'unset',
-            flexDirection: 'column',
         },
     },
     collapsIcon: {
@@ -40,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     collapseContainer: {
         [theme.breakpoints.down('md')]: {
             display: 'inline-flex',
-            flexDirection: 'column',
+            // flexDirection: 'column',
             paddingBottom: '1em',
         },
     },
@@ -53,6 +51,11 @@ const useStyles = makeStyles(theme => ({
             flexDirection: 'column',
         },
     },
+    logoImg: {
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
+        },
+    }
 }));
 
 const NavBar = () => {
@@ -70,7 +73,7 @@ const NavBar = () => {
     return (
         <Toolbar className={classes.toolbar} >
             <div className={classes.collapseContainer} onClick={() => setCollapsed(!collapsed)}>
-                <img src={logo} alt="Logo" height={100} />
+                <img className={classes.logoImg} src={logo} alt="Logo" height={100} />
                 <MenuIcon className={classes.collapsIcon} />
             </div>
             {!collapsed && (

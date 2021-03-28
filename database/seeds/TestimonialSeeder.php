@@ -65,6 +65,48 @@ class TestimonialSeeder extends Seeder
                 'created_at'  => '2016-01-28 00:00:00',
                 'rating'      => 5.0,
             ],
+            [
+                'title'       => 'Google Review',
+                'description' => 'Howard is a stand up lawyer who delivers on his promises.',
+                'created_by'  => 'Scott Huston',
+                'created_at'  => '2019-01-28 00:00:00',
+                'rating'      => 5.0,
+            ],
+            [
+                'title'       => 'Google Review',
+                'description' => 'Howard and Michelle are wonderful! I was able to settle my case in mediation and avoid the trauma of going through the full process. I wouldn’t have been able to do that without Stietzel Law.',
+                'created_by'  => 'Emellissa Fay',
+                'created_at'  => '2020-02-01 00:00:00',
+                'rating'      => 5.0,
+            ],
+            [
+                'title'       => 'Google Review',
+                'description' => 'Over the last ten years, Mr. Howard Stitzel, Esq and his firm Howard Stitzel Law, LLC has represented me on a number of cases ranging from Family Law to Guardianship to Probate, all of which have been very successful. Mr. Stitzel is very responsive towards his clients needs.  His staff is always pleasant and makes sure that I am kept up to date on the progress of my cases.  I have referred many friends, family members, and colleagues to Mr. Stitzel for representation on their cases, and they have all been very happy with the outcomes of their cases. I will definitely continue to use Howard Stitzel Law, LLC for any future legal needs.',
+                'created_by'  => 'Alana Powers',
+                'created_at'  => '2020-02-21 00:00:00',
+                'rating'      => 5.0,
+            ],
+            [
+                'title'       => 'Google Review',
+                'description' => 'Howard represented me with a legal issue I had no experience with and worked hard to get the best possible outcome. He calmed my fears along the way, and he and Michelle were so responsive and answered all my questions. I am so grateful for their help and highly recommend their services.',
+                'created_by'  => 'Patricia Martin',
+                'created_at'  => '2020-09-04 00:00:00',
+                'rating'      => 5.0,
+            ],
+            [
+                'title'       => 'Google Review',
+                'description' => 'Howard and Michelle are amazing. I could not be happier with the results of my case. Howards experience in family law helped me keep my cool and guide me through the process of my legal issue. I would highly recommend his services for any if your legal needs.',
+                'created_by'  => 'Leland Bennett',
+                'created_at'  => '2020-09-28 00:00:00',
+                'rating'      => 5.0,
+            ],
+            [
+                'title'       => 'Google Review',
+                'description' => "Through such a difficult court process, Howard and Michelle had made it such a stress free process and welcomed me in as family, and were there for me at all hours. I highly, highly, highly, recommend them for anyone going through any legal situations. They are amazing and I can't thank them enough for what they've done for me and my family.",
+                'created_by'  => 'Auston Lacey',
+                'created_at'  => '2021-03-08 00:00:00',
+                'rating'      => 5.0,
+            ],
         ];
     }
 

@@ -38,9 +38,10 @@ const useStyles = makeStyles(theme => ({
     },
     image: {
         marginLeft: '1.75em',
-
+        [theme.breakpoints.down('md')]: {
+            textAlign: 'center',
+        },
     },
-
 }));
 
 const About = () => {
@@ -52,10 +53,10 @@ const About = () => {
             <h1 className={classes.headerWithDivider}>Meet Howard Stitzel</h1>
             <Divider light />
             <Grid container className={classes.gridContainer}>
-                <Grid item xs={2} className={classes.image}>
+                <Grid item xs={12} className={classes.image}>
                     <img src={Howard} />
                 </Grid>
-                <Grid item xs={10} md={9}>
+                <Grid item md={12}>
                     <Typography className={classes.howardBio}>
                         Howard Stitzel received his undergraduate degree in History and Political Science and his law degree from Stetson University.
                         Howard began practicing law in 1989 and concentrates his practice in the areas of family law, criminal defense, personal injury and civil trial practice.

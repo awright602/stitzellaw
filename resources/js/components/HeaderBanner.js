@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         paddingLeft: '4em',
         [theme.breakpoints.down('md')]: {
-            marginTop: '7em',
+            marginTop: '2em',
         },
         [theme.breakpoints.down('xs')]: {
             paddingLeft: '2em',
@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         paddingLeft: '4em',
         [theme.breakpoints.down('md')]: {
-            marginTop: '7em',
+            marginTop: '2em',
         },
         [theme.breakpoints.down('xs')]: {
             paddingLeft: '2em',
@@ -62,10 +62,17 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         paddingLeft: '4em',
         [theme.breakpoints.down('md')]: {
-            marginTop: '7em',
+            marginTop: '2em',
         },
         [theme.breakpoints.down('xs')]: {
             paddingLeft: '2em',
+        },
+    },
+    testimonialsText: {
+        color: 'white',
+        fontSize: '3.5rem',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '3rem',
         },
     },
     contactBanner: {
@@ -81,7 +88,7 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         paddingLeft: '4em',
         [theme.breakpoints.down('md')]: {
-            marginTop: '7em',
+            marginTop: '2em',
         },
         [theme.breakpoints.down('xs')]: {
             paddingLeft: '2em',
@@ -108,7 +115,7 @@ const HeaderBanner = (props) => {
     } else if (props.type === 'Testimonials') {
         return (
             <div className={classes.testimonialsBanner}>
-                <Typography className={classes.headerText}>Testimonials</Typography>
+                <Typography className={classes.testimonialsText}>Testimonials</Typography>
             </div>
         );
     } else if (props.type === 'Contact Us') {

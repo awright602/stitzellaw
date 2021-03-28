@@ -48,6 +48,8 @@ const useStyles = makeStyles(theme => ({
     practiceAreas: {
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column-reverse',
+            textAlign: 'center',
+            paddingBottom: '2em',
         },
     },
     link: {
@@ -125,7 +127,7 @@ const Home = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={4} md={6}>
+                    <Grid item md={12}>
                         <img src={homeHandshake} alt="background" className={classes.handshake} />
                     </Grid>
                 </Grid>
