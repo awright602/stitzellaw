@@ -48,9 +48,9 @@ const Contact = () => {
                 <Grid item sm={6} md={3} style={{flexGrow: 1}}>
                     <Paper className={classes.gridItem}>
                         <MyLocationIcon className={classes.icon} />
-                        <a href='https://www.google.com/maps/place/206+Mason+St,+Brandon,+FL+33511/@27.9352329,-82.286113,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2cdc91415f0af:0x30838b1d3cb2d066!8m2!3d27.9352282!4d-82.2839243'
+                        <a href='https://www.google.com/maps/place/911+S+Parsons+Ave,+Brandon,+FL+33511/@27.9246258,-82.2896549,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2cdc159f0bbdb:0xeaa47523372850e8!8m2!3d27.9246259!4d-82.2851702!16s%2Fg%2F11c89c1d9j'
                             target='_blank' className={classes.link} >
-                            <Typography>206 Mason St, Brandon, FL 33511</Typography>
+                            <Typography>911 S Parsons Ave, Suite E, Brandon, FL 33511</Typography>
                         </a>
                     </Paper>
                 </Grid>
