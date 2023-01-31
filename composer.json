@@ -18,8 +18,7 @@
         "facade/ignition": "^2.3",
         "fzaninotto/faker": "^1.9",
         "mockery/mockery": "^1.4",
-        "nunomaduro/collision": "^4.0",
-        "phpunit/phpunit": "^9.0"
+        "nunomaduro/collision": "^4.0"
     },
     "config": {
         "optimize-autoloader": true,
