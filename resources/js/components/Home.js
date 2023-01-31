@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import PracticeAreaSection from './PracticeAreaSection';
 import homeHandshake from '../../images/homeHandshake.jpg';
 import CenterPageHeader from './CenterPageHeader';
-import Covid from './Covid';
 import HomeBackgroundOverlay from './HomeBackgroundOverlay';
 import HomeBottomBackgroundOverlay from './HomeBottomBackgroundOverlay';
 import ConsultForm from './ConsultForm';
@@ -74,7 +73,6 @@ const Home = () => {
         <>
             <div className={classes.homeBannerContainer}>
                 <img src='../../images/HomeBackground.jpg' className={classes.homepageBackground} />
-                <Covid />
                 <HomeBackgroundOverlay />
                 <HomeBottomBackgroundOverlay />
             </div>
